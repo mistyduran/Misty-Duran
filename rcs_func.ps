@@ -1,0 +1,683 @@
+%!PS-Adobe-1.0
+%%Creator: devps (Pipeline Associates, Inc.)
+%%CreationDate: Mon Jan 14 15:26:25 1991
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+
+/X /exch load def
+/r /rmoveto load def
+/m /moveto load def
+/l /lineto load def
+/rl /rlineto load def
+/lc{yc X xc X l st} bind def
+/mc{yc X xc X m} bind def
+/el{gs /a X def a div 1 X scale cp np a xc 2 div 0 360 arc st gr} bind def
+/ar{cp 7 2 roll np xc 5 1 roll atan 3 1 roll atan X arc st} bind def
+/sp{yc X xc X 6 2 roll yc X xc X 6 2 roll yc X xc X 6 2 roll ct} bind def
+/st /stroke load def
+/gs /gsave load def
+/gr /grestore load def
+/cp /currentpoint load def
+/np /newpath load def
+/ct /curveto load def
+/m0{0 0 moveto} bind def
+/BP{/devps-save save def m0} bind def
+/EP{
+clear devps-save restore
+showpage} bind def
+/res 10.000000 def
+/V{res neg div 792 add
+currentpoint pop X
+m} bind def
+/H{res div
+currentpoint X pop
+transform round exch round exch itransform
+moveto} bind def
+/h{res div 0 r} bind def
+/v{res neg div 0 X r} bind def
+/xc{res div} bind def
+/yc{res neg div 792 add} bind def
+/S{X H show} bind def
+/psize 10 def
+/height 1 def
+/slant 0 def
+/FF{findfont X dup 12 div setlinewidth /psize X def
+    [psize 0 psize height mul slant sin slant cos div mul psize height mul 0 0]
+    makefont setfont} bind def
+/shade{gs
+ /dy X def
+ /dx X def
+ np m
+ setgray
+ 0 dy rl
+ dx 0 rl
+ 0 dy neg rl
+ dx neg 0 rl
+ closepath
+ fill
+gr} bind def
+1 setlinecap
+/C{/Courier FF}def
+/R{/Times-Roman FF}def
+/B{/Times-Bold FF}def
+%%EndProlog
+%%Page: 1 1
+BP
+/slant 0 def
+/height 1.000000 def
+10 C
+10 R
+40 V
+10 R
+0(-)S
+840 V
+10 B
+720(Functions)S
+1173(of)S
+1286(RCS)S
+1516(\(Revision)S
+1946(Control)S
+2309(System\))S
+996 V
+10 R
+970(RCS)S
+1193(manages)S
+1575(software)S
+1951(libraries.)S
+2336(It)S
+2430(greatly)S
+2740(increases)S
+3138(programmer)S
+3664(productivity)S
+4186(by)S
+4319(providing)S
+4741(the)S
+4896(fol-)S
+1116 V
+720(lowing)S
+1028(functions.)S
+1272 V
+720(1.)S
+970(RCS)S
+1192(stores)S
+1457(and)S
+1633(retrieves)S
+2008(multiple)S
+2374(revisions)S
+2767(of)S
+2883(program)S
+3254(and)S
+3431(other)S
+3669(text.)S
+3907(Thus,)S
+4165(one)S
+4342(can)S
+4513(maintain)S
+4896(one)S
+1392 V
+970(or)S
+1084(more)S
+1320(releases)S
+1666(while)S
+1919(developing)S
+2394(the)S
+2547(next)S
+2749(release,)S
+3080(with)S
+3288(a)S
+3362(minimum)S
+3782(of)S
+3895(space)S
+4146(overhead.)S
+4566(Changes)S
+4940(no)S
+1512 V
+970(longer)S
+1255(destroy)S
+1579(the)S
+1731(original)S
+2072(--)S
+2168(previous)S
+2542(revisions)S
+2933(remain)S
+3240(accessible.)S
+1668 V
+970(a.)S
+1220(Maintains)S
+1650(each)S
+1862(module)S
+2192(as)S
+2305(a)S
+2379(tree)S
+2558(of)S
+2671(revisions.)S
+1824 V
+970(b.)S
+1220(Project)S
+1533(libraries)S
+1890(can)S
+2058(be)S
+2182(organized)S
+2605(centrally,)S
+3009(decentralized,)S
+3595(or)S
+3708(any)S
+3882(way)S
+4078(you)S
+4258(like.)S
+1980 V
+970(c.)S
+1220(RCS)S
+1450(works)S
+1734(for)S
+1890(any)S
+2074(type)S
+2287(of)S
+2411(text:)S
+2630(programs,)S
+3073(documentation,)S
+3733(memos,)S
+4088(papers,)S
+4414(graphics,)S
+4818(VLSI)S
+2100 V
+1220(layouts,)S
+1564(form)S
+1788(letters,)S
+2087(etc.)S
+2256 V
+720(2.)S
+970(RCS)S
+1194(maintains)S
+1617(a)S
+1695(complete)S
+2095(history)S
+2407(of)S
+2525(changes.)S
+2936(Thus,)S
+3196(one)S
+3375(can)S
+3548(\256nd)S
+3739(out)S
+3902(what)S
+4131(happened)S
+4548(to)S
+4661(a)S
+4740(module)S
+2376 V
+970(easily)S
+1233(and)S
+1407(quickly,)S
+1762(without)S
+2098(having)S
+2400(to)S
+2508(compare)S
+2881(source)S
+3171(listings)S
+3491(or)S
+3604(having)S
+3906(to)S
+4014(track)S
+4243(down)S
+4495(colleagues.)S
+2532 V
+970(a.)S
+1220(RCS)S
+1440(performs)S
+1830(automatic)S
+2254(record)S
+2538(keeping.)S
+2688 V
+970(b.)S
+1220(RCS)S
+1440(logs)S
+1637(all)S
+1767(changes)S
+2118(automatically.)S
+2844 V
+970(c.)S
+1220(RCS)S
+1440(guarantees)S
+1896(project)S
+2203(continuity.)S
+3000 V
+720(3.)S
+970(RCS)S
+1190(manages)S
+1569(multiple)S
+1933(lines)S
+2152(of)S
+2265(development.)S
+3156 V
+720(4.)S
+970(RCS)S
+1198(can)S
+1375(merge)S
+1663(multiple)S
+2036(lines)S
+2264(of)S
+2386(development.)S
+2996(Thus,)S
+3260(when)S
+3515(several)S
+3836(parallel)S
+4174(lines)S
+4402(of)S
+4524(development)S
+3276 V
+970(must)S
+1195(be)S
+1319(consolidated)S
+1854(into)S
+2040(one)S
+2214(line,)S
+2419(the)S
+2571(merging)S
+2934(of)S
+3047(changes)S
+3398(is)S
+3495(automatic.)S
+3432 V
+720(5.)S
+970(RCS)S
+1193(\257ags)S
+1415(coding)S
+1720(con\257icts.)S
+2147(If)S
+2246(two)S
+2429(or)S
+2546(more)S
+2785(lines)S
+3008(of)S
+3125(development)S
+3675(modify)S
+3998(the)S
+4154(same)S
+4393(section)S
+4710(of)S
+4827(code,)S
+3552 V
+970(RCS)S
+1190(can)S
+1358(alert)S
+1565(programmers)S
+2127(about)S
+2379(overlapping)S
+2886(changes.)S
+3708 V
+720(6.)S
+970(RCS)S
+1193(resolves)S
+1553(access)S
+1840(con\257icts.)S
+2267(When)S
+2538(two)S
+2721(or)S
+2837(more)S
+3075(programmers)S
+3640(wish)S
+3863(to)S
+3975(modify)S
+4298(the)S
+4454(same)S
+4693(revision,)S
+3828 V
+970(RCS)S
+1190(alerts)S
+1436(the)S
+1588(programmers)S
+2150(and)S
+2324(makes)S
+2609(sure)S
+2805(that)S
+2985(one)S
+3159(modi\256cation)S
+3695(won't)S
+3958(wipe)S
+4182(out)S
+4340(the)S
+4492(other)S
+4727(one.)S
+3984 V
+720(7.)S
+970(RCS)S
+1208(provides)S
+1600(high-level)S
+2053(retrieval)S
+2433(functions.)S
+2908(Revisions)S
+3351(can)S
+3537(be)S
+3679(retrieved)S
+4081(according)S
+4522(to)S
+4648(ranges)S
+4957(of)S
+4104 V
+970(revision)S
+1322(numbers,)S
+1721(symbolic)S
+2118(names,)S
+2428(dates,)S
+2688(authors,)S
+3037(and)S
+3211(states.)S
+4260 V
+720(8.)S
+970(RCS)S
+1212(provides)S
+1608(release)S
+1936(and)S
+2132(con\256guration)S
+2717(control.)S
+3107(Revisions)S
+3554(can)S
+3744(be)S
+3890(marked)S
+4242(as)S
+4378(released,)S
+4782(stable,)S
+4380 V
+970(experimental,)S
+1546(etc.)S
+1747(Con\256gurations)S
+2372(of)S
+2485(modules)S
+2854(can)S
+3022(be)S
+3146(described)S
+3558(simply)S
+3861(and)S
+4035(directly.)S
+4536 V
+720(9.)S
+970(RCS)S
+1212(performs)S
+1624(automatic)S
+2071(identi\256cation)S
+2652(of)S
+2788(modules)S
+3180(with)S
+3411(name,)S
+3705(revision)S
+4080(number,)S
+4463(creation)S
+4837(time,)S
+4656 V
+970(author,)S
+1285(etc.)S
+1491(Thus,)S
+1751(it)S
+1842(is)S
+1944(always)S
+2256(possible)S
+2619(to)S
+2732(determine)S
+3166(which)S
+3445(revisions)S
+3841(of)S
+3959(which)S
+4238(modules)S
+4612(make)S
+4862(up)S
+4996(a)S
+4776 V
+970(given)S
+1222(con\256guration.)S
+4932 V
+720(10.)S
+970(Provides)S
+1350(high-level)S
+1785(management)S
+2325(visibility.)S
+2767(Thus,)S
+3022(it)S
+3108(is)S
+3205(easy)S
+3412(to)S
+3520(track)S
+3749(the)S
+3901(status)S
+4159(of)S
+4272(a)S
+4346(software)S
+4719(project.)S
+5088 V
+970(a.)S
+1220(RCS)S
+1440(provides)S
+1814(a)S
+1888(complete)S
+2284(change)S
+2596(history.)S
+5244 V
+970(b.)S
+1220(RCS)S
+1440(records)S
+1763(who)S
+1965(did)S
+2123(what)S
+2347(when)S
+2593(to)S
+2701(which)S
+2975(revision)S
+3327(of)S
+3440(which)S
+3714(module.)S
+5400 V
+720(11.)S
+970(RCS)S
+1193(is)S
+1293(fully)S
+1515(compatible)S
+1992(with)S
+2203(existing)S
+2553(software)S
+2930(development)S
+3480(tools.)S
+3764(RCS)S
+3988(is)S
+4089(unobtrusive)S
+4595(--)S
+4695(its)S
+4824(inter-)S
+5520 V
+970(face)S
+1165(to)S
+1273(the)S
+1425(\256le)S
+1583(system)S
+1891(is)S
+1988(such)S
+2201(that)S
+2381(all)S
+2511(your)S
+2724(existing)S
+3071(software)S
+3444(tools)S
+3669(can)S
+3837(be)S
+3961(used)S
+4174(as)S
+4287(before.)S
+5676 V
+720(12.)S
+970(RCS')S
+1232(basic)S
+1476(user)S
+1682(interface)S
+2070(is)S
+2177(extremely)S
+2616(simple.)S
+2948(The)S
+3143(novice)S
+3449(need)S
+3677(to)S
+3795(learn)S
+4034(only)S
+4252(two)S
+4442(commands.)S
+4940(Its)S
+5796 V
+970(more)S
+1209(sophisticated)S
+1765(features)S
+2114(have)S
+2336(been)S
+2558(tuned)S
+2813(towards)S
+3162(advanced)S
+3571(software)S
+3947(development)S
+4496(environments)S
+5916 V
+970(and)S
+1144(the)S
+1296(experienced)S
+1807(software)S
+2180(professional.)S
+6072 V
+720(13.)S
+970(RCS)S
+1197(simpli\256es)S
+1624(software)S
+2004(distribution)S
+2503(if)S
+2601(customers)S
+3043(maintain)S
+3431(sources)S
+3768(with)S
+3984(RCS)S
+4212(also.)S
+4436(This)S
+4652(technique)S
+6192 V
+970(assures)S
+1290(proper)S
+1582(identi\256cation)S
+2142(of)S
+2257(versions)S
+2622(and)S
+2798(con\256gurations,)S
+3426(and)S
+3601(tracking)S
+3959(of)S
+4073(customer)S
+4470(modi\256cations.)S
+6312 V
+970(Customer)S
+1408(modi\256cations)S
+2002(can)S
+2189(be)S
+2332(merged)S
+2680(into)S
+2886(distributed)S
+3364(versions)S
+3747(locally)S
+4069(or)S
+4202(by)S
+4352(the)S
+4524(development)S
+6432 V
+970(group.)S
+6588 V
+720(14.)S
+970(RCS)S
+1198(needs)S
+1464(little)S
+1687(extra)S
+1925(space)S
+2185(for)S
+2340(the)S
+2501(revisions)S
+2901(\(only)S
+3151(the)S
+3312(di)S
+3390 H
+	(f)show 10 -.5 mul h (f)show
+10 R
+3451(erences\).)S
+3876(If)S
+3981(intermediate)S
+4519(revisions)S
+4919(are)S
+6708 V
+970(deleted,)S
+1313(the)S
+1465(corresponding)S
+2066(di)S
+2144 H
+	(f)show 10 -.5 mul h (f)show
+10 R
+2205(erences)S
+2533(are)S
+2684(compressed)S
+3185(into)S
+3371(the)S
+3523(shortest)S
+3864(possible)S
+4222(form.)S
+6864 V
+720(15.)S
+970(RCS)S
+1190(is)S
+1287(implemented)S
+1839(with)S
+2047(reverse)S
+2364(deltas.)S
+2652(This)S
+2860(means)S
+3145(that)S
+3325(the)S
+3477(latest)S
+3718(revision,)S
+4095(which)S
+4369(is)S
+4466(the)S
+4618(one)S
+4792(that)S
+4973(is)S
+6984 V
+970(accessed)S
+1363(most)S
+1602(often,)S
+1876(is)S
+1987(stored)S
+2275(intact.)S
+2566(All)S
+2738(others)S
+3026(are)S
+3191(regenerated)S
+3699(from)S
+3937(the)S
+4103(latest)S
+4358(one)S
+4546(by)S
+4690(applying)S
+7104 V
+970(reverse)S
+1293(deltas)S
+1562(\(backward)S
+2018(di)S
+2096 H
+	(f)show 10 -.5 mul h (f)show
+10 R
+2157(erences\).)S
+2549(This)S
+2763(results)S
+3060(in)S
+3174(fast)S
+3354(access)S
+3644(time)S
+3858(for)S
+4010(the)S
+4168(revision)S
+4526(needed)S
+4845(most)S
+7224 V
+970(often.)S
+7920 V
+EP
+%%Trailer
+%%DocumentFonts: Courier Times-Roman Times-Bold
+%%Pages: 1
